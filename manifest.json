@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Unsuggest",
-  "description": "This extension removes all the annoying Suggested Posts on Facebook",
+  "description": "Removes all the annoying Suggested Posts and Pages in your Facebook news feed.",
   "version": "0.1",
   "content_scripts": [
     {
@@ -11,8 +11,12 @@
       "js": ["jquery.min.js", "mutation_summary.js", "unsuggest.js"]
     }
   ],
+  "icons": { "16": "icon16.png",
+              "48": "icon48.png",
+              "128": "icon128.png"
+  },
    "browser_action": {
-     "default_icon": "icon.png",
+     "default_icon": "icon48.png",
      "default_popup": "popup.html"
    }
 }
