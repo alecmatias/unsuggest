@@ -1,14 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Unsuggest",
+  "name": "Unsuggested for Facebook",
   "description": "Removes all the annoying Suggested Posts and Pages in your Facebook news feed.",
-  "version": "0.1",
+  "version": "0.5",
   "content_scripts": [
     {
       "matches": ["*://*.facebook.com/*"],
-      "css": ["unsuggest.css"],
-      "js": ["jquery.min.js", "mutation_summary.js", "unsuggest.js"]
+      "js": ["mutation_summary.js", "unsuggest.js"]
     }
   ],
   "icons": { "16": "icon16.png",
@@ -18,5 +17,6 @@
    "browser_action": {
      "default_icon": "icon48.png",
      "default_popup": "popup.html"
-   }
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }
