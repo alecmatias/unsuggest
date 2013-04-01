@@ -3,11 +3,11 @@
 
   "name": "Unsuggested for Facebook",
   "description": "Removes all the annoying Suggested Posts and Pages in your Facebook news feed.",
-  "version": "0.5",
+  "version": "0.8",
   "content_scripts": [
     {
       "matches": ["*://*.facebook.com/*"],
-      "js": ["mutation_summary.js", "unsuggest.js"]
+      "js": ["jquery-min.js", "mutation_summary.js", "unsuggest.js"]
     }
   ],
   "icons": { "16": "icon16.png",
