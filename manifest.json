@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "Unsuggested for Facebook",
-  "description": "Removes all the annoying Suggested Posts and Pages in your Facebook news feed.",
-  "version": "0.8",
+  "description": "Hide and remove all the annoying Facebook Suggested Posts and Pages in your news feed.",
+  "version": "0.81",
   "content_scripts": [
     {
       "matches": ["*://*.facebook.com/*"],
